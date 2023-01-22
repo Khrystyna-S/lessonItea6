@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання про інтерфейс</title>
+</head>
+<style>
+    .wrap {
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+    }
+    .ObjForm,
+    .resultBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-sizing: border-box;
+      padding: 10px 20px;
+    }
+
+    .assigned {
+      width: 800px;
+      display: flex;
+    }
+    .createResult header {
+      font-weight: 700;
+    }
+
+    code {
+      display: block;
+      width: 100%;
+      word-break: break-word;
+    }
+
+    #result {
+      word-break: break-all;
+    }
+    .list li.hide {
+      display: none;
+    }
+  </style>
+<body>
+    <div id="obj">
+      <select id="select1"></select>
+      <select id="select2"></select>
+    </div>
+   
+    <div class="resultBlock">
+       <button id="combineBtn">Combine Objects!</button>
+      <h3> Result: </h3>
+      <div id="result"></div>
+    </div>
+
+    <div>
+        <input id="search" type="text">
+        <div class="list">
+          
+        </div>
+    </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
